@@ -1,3 +1,3 @@
 README
 
-Geosolutions Exercise
+Geosolutions Exercise V1
