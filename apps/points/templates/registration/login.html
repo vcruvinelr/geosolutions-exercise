@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Points App - Login</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Login-screen.css' %}">
+</head>
+
+<body id="page-top">
+    <div id="login-one" class="login-one">
+        <form class="login-one-form" method="post">
+            {% csrf_token %}
+            <div class="col">
+                <div class="login-one-ico"><i class="fa fa-unlock-alt" id="lockico"></i></div>
+                <div class="form-group">
+                    <div>
+                        <h3 id="heading">Log in:</h3>
+                          {{ form.as_p }}
+                    </div>
+                    <button class="btn btn-primary" type="submit">Log in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{% static 'assets/js/freelancer.js' %}"></script>
+</body>
+
+</html>

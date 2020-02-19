@@ -1,0 +1,3 @@
+README
+
+Geosolutions Exercise

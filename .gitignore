@@ -1,0 +1,21 @@
+# django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+staticfiles/
+*.py[cod]
+*$py.class
+
+
+# tests
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
